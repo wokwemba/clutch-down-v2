@@ -37,6 +37,9 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
+            <Link href="/app" className="text-white hover:text-neutral-300 transition-colors text-sm font-medium px-4 py-2">
+              Try App
+            </Link>
             <button className="text-white hover:text-neutral-300 transition-colors text-sm font-medium px-4 py-2">
               Log in
             </button>
@@ -69,6 +72,7 @@ export default function Navbar() {
           <Link href="#dashboard" className="text-white text-base font-medium" onClick={() => setMenuOpen(false)}>How It Works</Link>
           <Link href="#pricing" className="text-white text-base font-medium" onClick={() => setMenuOpen(false)}>Pricing</Link>
           <Link href="#" className="text-white text-base font-medium" onClick={() => setMenuOpen(false)}>Safety</Link>
+          <Link href="/app" className="text-white text-base font-medium" onClick={() => setMenuOpen(false)}>Try App</Link>
           <div className="flex flex-col gap-3 pt-4 border-t border-neutral-900">
             <button className="text-white text-sm font-medium py-3 text-left">Log in</button>
             <button className="bg-white text-black text-sm font-semibold px-5 py-3 rounded-lg">Sign up</button>

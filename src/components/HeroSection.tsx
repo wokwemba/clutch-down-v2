@@ -1,3 +1,7 @@
+"use client";
+
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen bg-black flex items-center overflow-hidden pt-16">
@@ -31,12 +35,12 @@ export default function HeroSection() {
 
             {/* CTA Buttons — Uber style */}
             <div className="flex flex-col sm:flex-row gap-3 mb-14">
-              <button className="bg-white text-black font-semibold px-8 py-4 rounded-lg text-base hover:bg-neutral-200 transition-colors">
+              <Link href="/app" className="bg-white text-black font-semibold px-8 py-4 rounded-lg text-base hover:bg-neutral-200 transition-colors inline-block text-center">
                 Dial a Mechanic
-              </button>
-              <button className="bg-neutral-900 text-white font-semibold px-8 py-4 rounded-lg text-base hover:bg-neutral-800 transition-colors border border-neutral-800">
+              </Link>
+              <Link href="/app" className="bg-neutral-900 text-white font-semibold px-8 py-4 rounded-lg text-base hover:bg-neutral-800 transition-colors border border-neutral-800 inline-block text-center">
                 Browse Spare Parts
-              </button>
+              </Link>
             </div>
 
             {/* Stats — Uber minimal style */}

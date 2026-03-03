@@ -85,3 +85,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
+| 2026-03-03 | Full Uber-standard redesign: pure black/white theme, bold typography, all 8 components redesigned, new AppScreensSection added showing 9 app screens (onboarding, auth, home, mechanic, parts, workshop, wallet, profile), Capacitor Android setup, debug APK generated (4.2MB at cardiology-debug.apk), static export configured in next.config.ts |
