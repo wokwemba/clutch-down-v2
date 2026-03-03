@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "Car-diology | Your Car's Health Monitor",
-  description: "Advanced car diagnostics and health monitoring. Keep your vehicle in peak condition with real-time insights.",
+  title: "Car-diology | On-Demand Car Service Platform",
+  description: "Find a mechanic near you, order spare parts, and book workshops — all in one app. Fast, reliable, transparent. Available 24/7.",
+  keywords: "car service, mechanic on demand, spare parts, workshop booking, towing service, roadside assistance",
+  openGraph: {
+    title: "Car-diology | On-Demand Car Service Platform",
+    description: "Don't get stranded. Find a mechanic near you, order spare parts, and book workshops instantly.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -24,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
-      >
+      <body className={`${inter.variable} antialiased`}>
         {children}
       </body>
     </html>
